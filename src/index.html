@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__filter">
+          <button id="filter-all" class="btn btn__filter btn__filter--active">All</button>
+          <button id="filter-active" class="btn btn__filter">Active</button>
+          <button id="filter-finished" class="btn btn__filter">Finished</button>
+        </div>
+        <button class="btn btn__add">ADD</button>
+      </div>
+    </header>
+    <div class="form">
+      <form class="form__inner">
+        <input
+          class="form__header"
+          type="text"
+          name="form-header"
+          placeholder="Enter a title..."
+        />
+        <input class="form__text" type="text" name="form-text" placeholder="Enter text..." />
+        <input class="btn btn__submit" type="submit" value="Submit" />
+      </form>
+    </div>
+    <section class="tasks">
+      <div class="tasks__inner">
+        <div class="tasks__item">
+          <div class="item__text">
+            <h1>What's that?</h1>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque labore soluta
+            ratione consequatur reiciendis nesciunt perferendis deserunt sunt adipisci
+            consequuntur dignissimos accusantium illum doloribus laudantium, possimus
+            assumenda. Eveniet, molestiae voluptatem.
+          </div>
+          <div class="item__buttons">
+            <button class="btn btn__done"></button>
+            <button class="btn btn__delete"></button>
+          </div>
+        </div>
+        <div class="tasks__item">
+          <div class="item__text">
+            <h1>I have no idea</h1>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque labore soluta
+            ratione consequatur reiciendis nesciunt perferendis deserunt sunt adipisci
+            consequuntur dignissimos accusantium illum doloribus laudantium, possimus
+            assumenda. Eveniet, molestiae voluptatem.
+          </div>
+          <div class="item__buttons">
+            <button class="btn btn__done"></button>
+            <button class="btn btn__delete"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
