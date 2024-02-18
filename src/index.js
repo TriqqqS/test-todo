@@ -140,14 +140,16 @@ document.querySelector(".form__inner").addEventListener("submit", (e) => {
     newTask.classList.add("tasks__item");
     newTask.innerHTML = `
     <div class="item__text">
-        <h1>${header.value}</h1>
-        <span>${text.value}</span>
+        <h1></h1>
+        <span></span>
     </div>
     <div class="item__buttons">
         <button class="btn btn__done"></button>
         <button class="btn btn__delete"></button>
     </div>
   `;
+    newTask.querySelector("h1").textContent = header.value;
+    newTask.querySelector("span").textContent = text.value;
 
     // Event listener for btn__done click
     newTask.querySelector(".btn__done").addEventListener("click", (e) => {
